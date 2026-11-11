@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style certo.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -16,11 +16,11 @@
 
   <!-- 1. IDENTIDADE VISUAL NO CABEÇALHO (<header>) -->
   <header class="header">
-    <a href="index certo.html"><img src="fotos/logo da loja.png" alt="Logotipo Art & Criativa" class="logo" width="145" height="46"></a>
+    <a href="index.html"><img src="fotos/logodaloja.png" alt="Logotipo Art & Criativa" class="logo" width="145" height="46"></a>
     <nav class="nav">
-      <a href="index certo.html#promocoes">Destaques</a>
-      <a href="index certo.html#categorias">Categorias</a>
-      <a href="index certo.html#vitrine">Vitrine</a>
+      <a href="index.html">Destaques</a>
+      <a href="index.html">Categorias</a>
+      <a href="index.html">Vitrine</a>
       <a href="cadastro.html">Entrar / Cadastrar</a>
       <a href="carrinho.html" class="cart">🛒 <span>3</span></a>
     </nav>
@@ -28,7 +28,7 @@
 
   <main>
     <!-- 2. CARROSSEL DE BANNERS COM SCROLL-SNAP & <picture> -->
-    <section class="hero" id="promocoes">
+    <div class="hero" id="promocoes">
       <div class="carousel">
         <article class="slide">
           <picture>
@@ -56,8 +56,8 @@
 
         <article class="slide">
           <picture>
-            <source media="(max-width: 600px)" srcset="fotos/banner fundo.png">
-            <img src="fotos/banner fundo.png" alt="Novidades do Ateliê Artístico" width="1000" height="340">
+            <source media="(max-width: 600px)" srcset="fotos/bannerfundo.png">
+            <img src="fotos/bannerfundo.png" alt="Novidades do Ateliê Artístico" width="1000" height="340">
           </picture>
           <div class="slide-txt">
             <span class="pill">Ateliê</span>
@@ -66,7 +66,7 @@
           </div>
         </article>
       </div>
-    </section>
+    
 
     <!-- 3. NAVEGAÇÃO POR CATEGORIAS CIRCULARES (border-radius: 50%) -->
     <section class="categories" id="categorias">
@@ -76,19 +76,19 @@
       </div>
       <div class="cat-grid">
         <a href="#vitrine" class="cat-card">
-          <div class="circle"><img src="fotos/tintas circular.jpg" alt="Tintas e Pintura" width="110" height="110"></div>
+          <div class="circle"><img src="fotos/tintascircular.jpg" alt="Tintas e Pintura" width="110" height="110"></div>
           <span>Pintura & Tintas</span>
         </a>
         <a href="#vitrine" class="cat-card">
-          <div class="circle"><img src="fotos/marcadores circular.jpg" alt="Desenho e Marcadores" width="110" height="110"></div>
+          <div class="circle"><img src="fotos/marcadorescircular.jpg" alt="Desenho e Marcadores" width="110" height="110"></div>
           <span>Marcadores & Sketch</span>
         </a>
         <a href="#vitrine" class="cat-card">
-          <div class="circle"><img src="fotos/kit escolar circular.jpg" alt="Material Escolar" width="110" height="110"></div>
+          <div class="circle"><img src="fotos/kitescolarcircular.jpg" alt="Material Escolar" width="110" height="110"></div>
           <span>Linha Escolar</span>
         </a>
         <a href="#vitrine" class="cat-card">
-          <div class="circle"><img src="fotos/kit pintura circular.jpg" alt="Kits e Materiais Artísticos" width="110" height="110"></div>
+          <div class="circle"><img src="fotos/kitpinturacircular.jpg" alt="Kits e Materiais Artísticos" width="110" height="110"></div>
           <span>Materiais & Kits</span>
         </a>
       </div>
@@ -101,26 +101,30 @@
         <h2>Vitrine de Materiais</h2>
       </div>
 
-      <div class="products-grid">
-        <!-- 1. EM PROMOÇÃO (-20%) -->
-        <article class="product-card">
-          <span class="badge sale">-20% OFF</span>
-          <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/Kit pintor iniciante.webp" alt="Kit Pintor Iniciante" loading="lazy" width="280" height="280"></figure>
-          </a>
-          <figcaption>
-            <span class="prod-cat">Pintura</span>
-            <h3><a href="produto.html">Kit Pintor Iniciante Completo</a></h3>
-            <p class="price"><del>R$ 199,90</del> <strong>R$ 159,90</strong></p>
-            <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
-          </figcaption>
-        </article>
-
+<div class="products-grid">
+  <!-- 1. EM PROMOÇÃO (-20%) -->
+  <article class="product-card">
+    <span class="badge sale">-20% OFF</span>
+    
+    <figure class="thumb">
+      <a href="produto.html" class="product-link">
+        <img src="fotos/Kitpintoriniciante.webp" alt="Kit Pintor Iniciante Completo">
+      </a>
+      
+      <figcaption>
+        <span class="prod-cat">Pintura</span>
+        <h3><a href="produto.html">Kit Pintor Iniciante Completo</a></h3>
+        <p class="price"><del>R$ 199,90</del> <strong>R$ 159,90</strong></p>
+        <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
+      </figcaption>
+    </figure>
+  </article>
+</div>
         <!-- 3. EM PROMOÇÃO (-10%) -->
         <article class="product-card">
           <span class="badge sale">-10% OFF</span>
           <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/canetas gel.webp" alt="Kit Canetas em Gel Coloridas" loading="lazy" width="280" height="280"></figure>
+            <figure class="thumb"><img src="fotos/canetasgel.webp" alt="Kit Canetas em Gel Coloridas" loading="lazy" width="280" height="280">
           </a>
           <figcaption>
             <span class="prod-cat">Escolar</span>
@@ -128,12 +132,13 @@
             <p class="price"><del>R$ 49,90</del> <strong>R$ 19,90</strong></p>
             <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
           </figcaption>
+          </figure>
         </article>
 
          <article class="product-card">
           <span class="badge sale">-5% OFF</span>
           <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/caderno1.jpg" alt="Caderno Inteligente" loading="lazy" width="280" height="280"></figure>
+            <figure class="thumb"><img src="fotos/caderno1.jpg" alt="Caderno Inteligente" loading="lazy" width="280" height="280">
           </a>
           <figcaption>
             <span class="prod-cat">Escolar</span>
@@ -141,37 +146,43 @@
             <p class="price"><del>R$ 203,99</del> <strong>R$ 180,90</strong></p>
             <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
           </figcaption>
+        </figure>
         </article>
 
         <!-- 4. ESTOQUE NORMAL -->
         <article class="product-card">
           <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/massa de modelar.jpg" alt="Massa de Modelar Artesanal" loading="lazy" width="280" height="280"></figure>
+            <figure class="thumb"><img src="fotos/massademodelar.jpg" alt="Massa de Modelar Artesanal" loading="lazy" width="280" height="280">
           </a>
+
           <figcaption>
             <span class="prod-cat">Modelagem</span>
             <h3><a href="produto.html">Massa de Modelar Profissional</a></h3>
             <p class="price"><strong>R$ 38,50</strong></p>
             <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
           </figcaption>
+        </figure>
         </article>
 
         <!-- 5. ESTOQUE NORMAL -->
         <article class="product-card">
           <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/paleta.jpg" alt="Paleta Tradicional de Pintura" loading="lazy" width="280" height="280"></figure>
+            <figure class="thumb">
+              <img src="fotos/paleta.jpg" alt="Paleta Tradicional de Pintura" loading="lazy" width="280" height="280">
           </a>
+
           <figcaption>
             <span class="prod-cat">Acessórios</span>
             <h3><a href="produto.html">Paleta Ergonômica de Madeira</a></h3>
             <p class="price"><strong>R$ 299,90</strong></p>
             <a href="produto.html" class="btn-action">Ver Detalhes / Comprar</a>
           </figcaption>
+          </figure>
         </article>
 
          <article class="product-card">
           <a href="produto.html" class="product-link">
-            <figure class="thumb"><img src="fotos/marca texto.jpg" alt="Paleta Tradicional de Pintura" loading="lazy" width="280" height="280"></figure>
+            <figure class="thumb"><img src="fotos/marcatexto.jpg" alt="Paleta Tradicional de Pintura" loading="lazy" width="280" height="280"></figure>
           </a>
           <figcaption>
             <span class="prod-cat">Marcadores</span>
@@ -184,13 +195,16 @@
         <!-- 6. PRODUTO ESGOTADO (Requisito 5) -->
         <article class="product-card soldout">
           <span class="badge out">ESGOTADO</span>
-          <figure class="thumb"><img src="fotos/kit pincel.jpg" alt="Kit Pincéis Finos Esgotado" loading="lazy" width="280" height="280"></figure>
+          
+          <figure class="thumb">
+            <img src="fotos/kitpincel.jpg" alt="Kit Pincéis Finos Esgotado" loading="lazy" width="280" height="280">
           <figcaption>
             <span class="prod-cat">Pincéis</span>
             <h3>Kit Pincéis Artísticos Finos</h3>
             <p class="price"><span class="out-txt">Indisponível</span></p>
             <button class="btn-action btn-out" disabled>Avise-me</button>
           </figcaption>
+          </figure>
         </article>
       </div>
     </section>
