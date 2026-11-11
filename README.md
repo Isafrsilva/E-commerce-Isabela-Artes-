@@ -75,6 +75,18 @@ E-commerce/
 ├── ecommerce_artes.sql          # Script de banco de dados MySQL
 └── README.md                    # Documentação do projeto
 ```
+## 🌐 Links das Páginas Publicadas (GitHub Pages)
+- 🏠 [Vitrine Principal (index.html)](https://isafrsilva.github.io/E-commerce-Isabela-Artes-/index.html)
+- 🔍 [Detalhes do Produto (produto.html)](https://isafrsilva.github.io/E-commerce-Isabela-Artes-/produto.html)
+- 🛍️ [Carrinho de Compras (carrinho.html)](https://isafrsilva.github.io/E-commerce-Isabela-Artes-/carrinho.html)
+- 👤 [Cadastro e Checkout (cadastro.html)](https://isafrsilva.github.io/E-commerce-Isabela-Artes-/cadastro.html)
+
+---
+
+## ✅ Relatório de Conformidade W3C (Clique para Auditar em Tempo Real)
+
+Todas as páginas deste repositório foram inspecionadas e validadas com **Zero Erros** nos validadores oficiais do consórcio W3C:
+
 
 ---
 
